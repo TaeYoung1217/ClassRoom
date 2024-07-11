@@ -63,28 +63,28 @@ public class Main {
         seniorClassRoom.addStudent(senior2);
         seniorClassRoom.addStudent(senior3);
 
-        System.out.println(allStudentsClassRoom.getStudentByStudentNumber("003")); //Senior ~~
-        System.out.println(allStudentsClassRoom.getStudentByStudentNumber("006")); //Junior ~~
-        allStudentsClassRoom.printStudentNames(); //이클래스룸(전체교양수업)은 ~~
+        System.out.println(allStudentsClassRoom.getStudentByStudentNumber("003"));
+        System.out.println(allStudentsClassRoom.getStudentByStudentNumber("006"));
+        allStudentsClassRoom.printStudentNames();
 
-        System.out.println(youngGroupClassRoom.getStudentByStudentNumber("010")); //Freshman ~~
-        System.out.println(youngGroupClassRoom.getStudentByStudentNumber("005")); //null
-        youngGroupClassRoom.printStudentNames(); //이클래스룸(저학년 전용 ~~
+        System.out.println(youngGroupClassRoom.getStudentByStudentNumber("010"));
+        System.out.println(youngGroupClassRoom.getStudentByStudentNumber("005"));
+        youngGroupClassRoom.printStudentNames();
 
-        System.out.println(elderGroupClassRoom.getStudentByStudentNumber("001")); //Senior ~~
-        System.out.println(elderGroupClassRoom.getStudentByStudentNumber("002")); //Senior ~~
-        elderGroupClassRoom.printStudentNames(); //이클래스룸(고학년 전용~
+        System.out.println(elderGroupClassRoom.getStudentByStudentNumber("001"));
+        System.out.println(elderGroupClassRoom.getStudentByStudentNumber("002"));
+        elderGroupClassRoom.printStudentNames();
 
-        System.out.println(freshmanClassRoom.getStudentByStudentNumber("011")); //Freshman ~~
-        freshmanClassRoom.printStudentNames(); //이클래스룸은(1학년 전공수업~~
+        System.out.println(freshmanClassRoom.getStudentByStudentNumber("011"));
+        freshmanClassRoom.printStudentNames();
 
-        System.out.println(sophomoreClassRoom.getStudentByStudentNumber("008")); //Sophomore ~~
-        sophomoreClassRoom.printStudentNames(); //이클래스룸은(2학년 전공~~
+        System.out.println(sophomoreClassRoom.getStudentByStudentNumber("008"));
+        sophomoreClassRoom.printStudentNames();
 
-        System.out.println(juniorClassRoom.getStudentByStudentNumber("006")); //Junior ~
-        juniorClassRoom.printStudentNames(); //이클래스룸(3학년 전공~
+        System.out.println(juniorClassRoom.getStudentByStudentNumber("006"));
+        juniorClassRoom.printStudentNames();
 
-        System.out.println(seniorClassRoom.getStudentByStudentNumber("002")); //Senior~
-        seniorClassRoom.printStudentNames(); //이클래스룸(4학년~
+        System.out.println(seniorClassRoom.getStudentByStudentNumber("002"));
+        seniorClassRoom.printStudentNames();
     }
 }
