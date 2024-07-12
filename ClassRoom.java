@@ -8,14 +8,19 @@ import java.util.Map;
 public class ClassRoom<T extends CollegeStudent> {
     private String className;
 
-    private Map<String, T> studentMap = new HashMap<>(); //key : studentNumber, value : 객체
+    private Map<String, T> studentMap; //key : studentNumber, value : 객체
+    private List<String> studentNames;
 
     public ClassRoom(String className) {
         this.className = className;
+        studentMap = new HashMap<>();
+        studentNames = new ArrayList<>();
+
     }
 
     public void addStudent(T student) {
         studentMap.put(student.getStudentNumber(), student);
+        studentNames.add(student.getName());
     }
 
     public String getStudentByStudentNumber(String studentNumber) {
